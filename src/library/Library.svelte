@@ -4,7 +4,7 @@
     import { httpGet } from '../common/api.js';
     import { onMount } from 'svelte';
 
-    export let onClick;
+    export let onBookSelect;
 
     let books = [];
 
@@ -27,7 +27,7 @@
 
 <Button>+ Add Book</Button>
 
-<BookGrid books={books} {onClick} />
+<BookGrid books={books} {onBookSelect} />
 <style>
     header {
         margin: var(--spacingMedium) 0 var(--spacingLarge) 0;
